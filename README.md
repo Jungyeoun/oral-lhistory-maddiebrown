@@ -1,4 +1,4 @@
-# OralHistories
+# Oral Histories Analysis
 
 This repository contains the text files for interviews from the Scranton Oral History Project. These oral histories are also on file at the [Pennsylvania State Archives](phmc.state.pa.us/bah/dam/mg/mg409.htm). 
 
