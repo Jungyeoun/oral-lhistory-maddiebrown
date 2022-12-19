@@ -1,0 +1,76 @@
+dattidy$word<-dattidy$word %>% 
+  str_replace("miners","miner") %>% str_replace("lived","live") %>% str_replace("cars","car")%>% str_replace("stores","store")%>% str_replace("brothers","brother")%>% str_replace("hours","hour")%>% str_replace("houses","house") %>% str_replace("stayed","stay") %>% str_replace("workers","worker")%>% str_replace("mentioned","mention") %>% str_replace("friends","friend") %>% str_replace("called","call") %>% str_replace("dollars","dollar") %>% str_replace("told","tell") %>% str_replace("striked","strike") %>% str_replace("paid","pay") %>% str_replace("weeks","week")  %>% str_replace("boys","boy") %>% str_replace("jobs","job")  %>% str_replace("strikes","strike")  %>% str_replace("died","die")  %>% str_replace("parents","parent")  %>% str_replace("bosses","boss")  %>% str_replace("days","day")%>% str_replace("companies","company") %>% str_replace("killed","kill") %>% str_replace("mentioned","mention")%>% str_replace("bought","buy") %>% str_replace("cares","care") %>% str_replace("walked","walk") %>% str_replace("stored","store")%>% str_replace("schools","school")
+
+dattidy$word<-dattidy$word %>% 
+  str_replace("homes","home")%>% 
+  str_replace("nationalities","nationality")%>% 
+  str_replace("mills","mill")%>% 
+  str_replace("talked","talk")%>% 
+  str_replace("talking","talk")%>% 
+  str_replace("taking","take")%>% 
+  str_replace("took","take")%>% 
+  str_replace("gardens","garden")%>% 
+  str_replace("raised","raise")%>% 
+  str_replace("interviewing","interview")%>% 
+  str_replace("happened","happen")%>% 
+  str_replace("churches","church")%>% 
+  str_replace("papers","paper")%>% 
+  str_replace("relatives","relative")%>% 
+  str_replace("girls","girl")%>% 
+  str_replace("conditions","condition")%>% 
+  str_replace("boarders","boarder")%>% 
+  str_replace("heard","hear")%>% 
+  str_replace("mothers","mother")%>% 
+  str_replace("mcgurie","mcguire")%>% 
+  str_replace("fathers","father")%>% 
+  str_replace("living","live")%>% 
+  str_replace("brought","bring")%>% 
+  str_replace("helped","help")%>% 
+  str_replace("lots","lot")%>% 
+  str_replace("taught","teach")%>% 
+  str_replace("helping","help")%>% 
+  str_replace("songs","song")%>% 
+  str_replace("sold","sell")%>% 
+  str_replace("organized","organize")%>% 
+  str_replace("organizations","organization")%>% 
+  str_replace("played","play")%>% 
+  str_replace("religions","religion")%>% 
+  str_replace("foods","food")%>% 
+  str_replace("families","family")%>% 
+  str_replace("slovaks","slovak")%>% 
+  str_replace("lives","live")
+
+
+dattidy$word<-dattidy$word %>% 
+  str_replace("stories","story")%>% 
+  str_replace("picnics","picnic")%>% 
+  str_replace("peddlers","peddler")%>% 
+  str_replace("lost","lose")%>% 
+  str_replace("chickens","chicken")%>% 
+  str_replace("fights","fight")%>% 
+  str_replace("months","month")%>% 
+  str_replace("sisters","sister")%>% 
+  str_replace("wrote","write")%>% 
+  str_replace("closed","close")%>% 
+  str_replace("cows","cow")%>% 
+  str_replace("pigs","pig")%>% 
+  str_replace("laborers","laborer")%>% 
+  str_replace("belonged","belong")%>% 
+  str_replace("boarding","board")%>% 
+  str_replace("unions","union")%>% 
+  str_replace("mules","mule")%>% 
+  str_replace("changed","change")%>% 
+  str_replace("owned","own")%>% 
+  str_replace("started","start") %>% 
+  str_replace("moved","move") %>% 
+  str_replace("mined","mining") %>% 
+  str_replace("found","find")%>% 
+  str_replace("games","game")%>% 
+  str_replace("operators","operator")%>% 
+  str_replace("operators","operator")%>% 
+  str_replace("hometead","homestead")%>% 
+  str_replace("kids","kid")%>% 
+  str_replace("kid","children")%>% 
+  str_replace("customs","custom")%>% 
+  str_replace("children","child")%>% 
+  str_replace("running","run")
