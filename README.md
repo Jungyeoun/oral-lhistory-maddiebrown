@@ -8,3 +8,4 @@ This repository also includes the R script files for data analysis on word and b
 
 Finally, we include a stopword list for the Scranton oral histories. This custom stopword list includes abbreviations, names, and colloquial terms that were not picked up by general stopword lists. We encourage the use of and improvements to these tools by other researchers. 
 
+Results from these analyses are published in [Brown and Shackel 2023](https://link.springer.com/article/10.1007/s10761-022-00680-5).
