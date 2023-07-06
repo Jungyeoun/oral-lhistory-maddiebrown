@@ -2,7 +2,7 @@
 
 ## Madeline Brown and Paul Shackel
 
-This repository contains the text files for interviews from the Scranton Oral History Project. These oral histories are also on file at the [Pennsylvania State Archives](phmc.state.pa.us/bah/dam/mg/mg409.htm). Here we include the oral history files as .csv files, as they are incorporated into our ongoing text analysis research on these oral histories. 
+This repository contains the text files for interviews from the Scranton Oral History Project. These oral histories are also on file at the [Pennsylvania State Archives](phmc.state.pa.us/bah/dam/mg/mg409.htm). Here we include the oral history files as .csv files, in the form that they are incorporated into our ongoing text analysis research on these oral histories. These .csvs are also provided for reuse by other researchers.
 
 This repository also includes the R script files for data analysis on word and bigram frequencies, as well as other text analysis methods. Data analysis methods use the tidy text approach outlined by Silge and Robinson ([2017](https://www.tidytextmining.com/index.html)) and draw on code modified from their examples.
 
