@@ -292,6 +292,9 @@ top50_scranton <- dattidy %>% count(word, sort = TRUE) %>% top_n(50) %>% mutate(
 #top 100 words
 top100_scranton <- dattidy %>% count(word, sort = TRUE) %>% top_n(100) %>% mutate(word = reorder(word, n)) %>% data.frame()
 
+#top 20 words
+top20_scranton <- dattidy %>% count(word, sort = TRUE) %>% top_n(20) %>% mutate(word = reorder(word, n)) %>% data.frame()
+
 #plot it
 top50_scrantonplot <- top50_scranton %>% ggplot(aes(x = word, y = n)) + geom_col() + 
   xlab(NULL) + coord_flip() + labs(y = "Count", x = "Words", title = "Top 50 words in Scranton interviews") + theme_tufte(base_size = 18) + geom_hline(yintercept=100, linetype="dotted")+ geom_hline(yintercept=200, linetype="dotted")+ geom_hline(yintercept=300, linetype="dotted")
@@ -503,7 +506,7 @@ wordsbysentimentAFINN <- dattidy %>% inner_join(get_sentiments("afinn")) %>% cou
 ggplot(wordsbysentimentAFINN, aes(word_ordered,value)) +geom_col() +coord_flip() + labs(title="Sentiment in Scranton interviews (AFINN lexicon)", x="Words",y="AFINN value")
 
 ### Tagging based on custom lexicon
-coal_lex_scran <- read.csv("https://github.com/maddiebrown/OralHistories/blob/main/SentimentAnalysis/top50scranton_ANNOTATED.csv")
+coal_lex_scran <- read.csv("https://raw.githubusercontent.com/maddiebrown/OralHistories/main/SentimentAnalysis/top50scranton_ANNOTATED.csv")
 
 #Collapse community and community 2
 coal_lex_scran<-coal_lex_scran %>% mutate(COMMUNITY=ifelse(COMMUNITY=="Y", COMMUNITY, COMMUNITY2))
@@ -530,7 +533,9 @@ ggplot(scrantonwordsbylex, aes(word_ordered,n)) +geom_col() + facet_wrap(~sentim
 
 ## Bigram tagging
 ### Tagging based on custom lexicon
-coal_bigramlex_scran <- read.csv("https://github.com/maddiebrown/OralHistories/blob/main/SentimentAnalysis/top50bigramscranton_ANNOTATED.csv")
+coal_bigramlex_scran <- read.csv("https://raw.githubusercontent.com/maddiebrown/OralHistories/main/SentimentAnalysis/top50bigramscranton_ANNOTATED.csv")
+
+
 
 #Convert from wide to long format
 coal_bigramscran_long <- coal_bigramlex_scran %>% pivot_longer(!c(X,word1,word2,n),names_to = "sentiment", values_to="count")
